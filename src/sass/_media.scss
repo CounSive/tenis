@@ -1,0 +1,728 @@
+@media (max-width: 1320px) {
+    .container {
+        width: 1180px;
+    }
+    .promo {
+        &__services {
+            grid-template-columns: repeat(4,273px);
+            &__block {
+                width: 273px;
+            }
+            &__title {
+                top: 20px;
+                left: 25px;
+            }
+            &__text {
+                top: 70px;
+                left: 25px;
+            }
+            &__link {
+                top: 75px;
+                left: 235px;
+            }
+        }
+    }
+    .corts {
+        &__item {
+            grid-template-columns: repeat(3, 330px);
+            column-gap: 50px;
+        }
+        &__block {
+            width: 330px;
+            
+            &::before {
+                width: 366px;
+            }
+            
+        }
+    }
+    .club {
+        &__img {
+            padding-left: 40px;
+        }
+        &__descr {
+            left: 490px;
+        }
+    }
+    .trener {
+        &__border {
+            width: 185px;
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: 470px 636px;
+            column-gap: 40px;
+        } 
+        &__item {
+            width: 470px;
+        }
+    }
+    footer {
+        ul {
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        padding: 0;
+    }
+    .hamburger {
+        z-index: 10;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        height: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        cursor: pointer;
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background: #E3E8DE;
+        }
+    }
+    .promo {
+        min-height: 800px;
+        header {
+            width: 0%;
+            height: 0;
+            z-index: 10;
+        }
+        &__menu {
+            z-index: 30;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            z-index: 30;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.6s;
+            &.active {
+                left: 0;
+                visibility: visible;
+                opacity: 1;
+            }
+            &__list {
+                display: block;
+                list-style-type: none;
+                padding-left: 35px;
+            }
+            &__item {
+                text-transform: uppercase;
+                position: relative;
+                font-weight: bold;
+                font-size: 19px;
+                line-height: 36px;
+                margin-bottom: 15px;
+                transition: all 0.6s;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: -35px;
+                    top: 11px;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 100%;
+                    border: 1px solid #000000;
+                    transition: all 0.6s;
+                    
+                }
+                &:hover {
+                    &:nth-child(1) {
+                        box-shadow: inset 85px 0 0 0 #FFFFFF;
+                    }
+                    &:nth-child(2) {
+                        box-shadow: inset 80px 0 0 0 #FFFFFF;
+                    }
+                    &:nth-child(3) {
+                        box-shadow: inset 85px 0 0 0 #FFFFFF;
+                    }
+                    &:nth-child(4) {
+                        box-shadow: inset 75px 0 0 0 #FFFFFF;
+                    }
+                    &:nth-child(5) {
+                        box-shadow: inset 165px 0 0 0 #FFFFFF;
+                    }
+                    &:nth-child(6) {
+                        box-shadow: inset 80px 0 0 0 #FFFFFF;
+                    }
+                    &:nth-child(7) {
+                        box-shadow: inset 55px 0 0 0 #FFFFFF;
+                    }
+                    &:nth-child(8) {
+                        box-shadow: inset 100px 0 0 0 #FFFFFF;
+                    }
+                    
+                    &:before {
+                        background-color: #fff;
+                        border: none;
+                    }
+                }
+                a {
+                    display: block;
+                    width: 100%;
+                    color: #FFFFFF;
+                    &:hover {
+                        text-decoration: underline;
+                        color: #8D86C9;
+                    }
+                }
+            }
+            &__close {
+                display: block;
+                position: absolute;
+                top: 25px;
+                right: 25px;
+                cursor: pointer;
+                z-index: 10;
+            }
+            &__social {
+                position: absolute;
+                bottom: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90px;
+                padding-left: 0;
+                
+            }
+        }
+        &__block {
+            display: block;
+            position: relative;
+            width: 345px;
+            background-color: #8D86C9;
+            height: 100vh;
+            transition: all 0.6s;
+            z-index: 20;
+            padding-left: 35px;
+        } 
+        &__title {
+            padding-top: 100px;
+        }
+        &__services {
+            padding-top: 161px;
+            grid-template-columns: repeat(2, 304px);
+            grid-template-rows: repeat(2, 130px);
+            row-gap: 12px;
+            justify-content: center;
+            &__block {
+                width: 304px;
+                height: 130px;
+                &:nth-child(1){
+                    margin-bottom: 10px;
+                }
+                &:nth-child(2){
+                    margin-bottom: 10px;
+                }
+            }
+            &__title {
+                top: 20px;
+                left: 25px;
+            }
+            &__text {
+                top: 70px;
+                left: 25px;
+            }
+            &__link {
+                top: 75px;
+            }
+        }
+    }
+    .corts {
+        margin-top: 100px;
+        &__item {
+            
+            grid-template-columns: repeat(2,330px);
+            grid-template-rows: repeat(2, 450px);
+            row-gap: 64px;
+        }
+        &__block {
+            &-3 {
+                justify-self: center;
+                grid-column: 1 / 3;
+            }
+        }
+    }
+    .club {
+        margin-top: 100px;
+        &__img {
+            display: none;
+        }
+        &__block {
+            justify-content: center;
+        }
+        &__descr {
+            position: unset;
+            margin: 0 auto;
+            padding-left: 120px;
+        }
+    }
+    .trener{
+        margin-top: 100px;
+        &__corousel {
+            
+            
+            .slick-dots {
+                display: flex;
+                padding-top: 10px;
+                justify-content: center;
+                gap: 20px;
+                color: rgb(194, 97, 97);
+                button {
+                    display: none;
+                }
+               
+            }
+            .slick-active {
+                color: #8e83f1;
+            }
+        }
+        &__border {
+            width: 175px;
+        }
+        &__descr {
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+    }
+    .price {
+        margin-top: 100px;
+        &__wrapper {
+            grid-template-columns: 960px;
+        }
+        &__block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__list {
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: repeat(2, 400px);
+            grid-template-rows: repeat(2, 60px);
+            gap: 30px;
+        }
+        &__item {
+            width: 400px;
+        }
+        
+        &__services {
+            margin-top: 40px;
+            &__title {
+                text-align: center;
+            }
+            &__corousel {
+                .slick-dots {
+                    display: flex;
+                    padding-top: 10px;
+                    justify-content: center;
+                    gap: 20px;
+                    color: gray;
+                    button {
+                        display: none;
+                    }
+                   
+                }
+                .slick-active {
+                    color: #8D86C9;
+                }
+            }
+        }
+    }
+    footer {
+        margin-top: 100px;
+        .footer {
+            &__menu {
+                &__rules {
+                    font-size: 10px;
+                }
+                &__list {
+                    gap: 35px;
+                }
+                &__item {
+                    font-size: 12px;
+                }
+                &__social {
+                    padding-top: 38px;
+                }
+                &__img {
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .trener {
+        &__name {
+            margin: 0 auto;
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: 720px;
+        }
+        &__block {
+            
+            display: block;
+            text-align: center;
+        }
+        &__list {
+            grid-template-columns: repeat(2,340px);
+            grid-template-rows: repeat(2,60px);
+            gap: 20px;
+        }
+        &__item {
+            width: 340px;
+        }
+        &__services {
+            margin-top: 25px;
+            &__corousel {
+                margin-top: 30px;
+            }
+        }
+    }
+    footer {
+        .footer__menu {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 30px);
+            align-items: center;
+            &__rules{
+                text-align: center;
+                padding-top: 0;
+            }
+            &__list {
+                margin: 0 auto;
+                margin-bottom: 0;
+            }
+            &__item {
+                padding-top: 0;
+            }
+            &__social {
+                margin: 0 auto;
+                padding-top: 0;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo {
+       min-height: 680px;
+       &__title {
+        font-size: 35px;
+        line-height: 45px;
+       }
+       &__video {
+            padding-top: 40px;
+            &__link {
+                width: 50px;
+                height: 50px;
+                &::before {
+                    width: 66px;
+                    height: 66px;
+                }
+            }
+       }
+       &__services {
+            grid-template-columns: repeat(2, 250px);
+            grid-template-rows: repeat(2, 100px);
+            padding-top: 180px;
+            &__block {
+                justify-self: center;
+                width: 250px;
+                height: 100px;
+            }
+            &__title {
+                top: 5px;
+                left: 15px;
+                font-size: 15px;
+            }
+            &__text {
+                top: 50px;
+                left: 15px;
+                font-size: 20px;
+            }
+            &__link {
+                top: 52px;
+                left: 210px;
+            }
+       }
+    }
+    .corts {
+        &__item {
+            grid-template-columns: 310px;
+            grid-template-rows: repeat(3, 400px);
+            grid-auto-rows: 400px;
+        }
+        &__block {
+            height: 400px;
+            width: 310px;
+            grid-column: unset;
+            &::before {
+                width: 345px;
+                height: 435px;
+            }
+            &__text {
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+    .club {
+        min-height: 570px;
+        &__descr {
+            padding-top: 35px;
+            padding-left: 60px;
+            width: 540px;
+            height: 560px;
+            &__title {
+                font-size: 30px;
+            }
+            &__text {
+                padding-top: 5px;
+            }
+            &__subtitle {
+                font-size: 18px;
+                padding-top: 20px;
+            }
+            &__list {
+                &-item {
+                    padding-top: 15px;
+                    &::before {
+                        top: 40%;
+                    }
+                }
+            }
+        }
+
+    }
+    .trener {
+        margin-top: 70px;
+        
+        &__title{
+            font-size: 30px;
+            text-align: center;
+        }
+        &__block {
+            padding-top: 30px;
+        }
+        &__border {
+            width: 175px;
+        }
+        &__name {
+            font-size: 17px;
+            margin-top: 15px;
+            line-height: 20px;
+        }
+        &__descr {
+            width: 160px;
+        }
+    }
+    .price {
+        margin-top: 70px;
+        &__wrapper {
+            grid-template-columns: 540px;
+        }
+        &__block {
+            display: grid;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__list {
+            grid-template-columns: 340px;
+            grid-template-rows: repeat(4, 60px);
+            grid-auto-rows: 60px;
+            justify-self: center;
+        }
+        &__services {
+            &__corousel {
+                width: 90%;
+                margin: 0 auto;
+            }
+            &__title {
+                font-size: 30px;
+            }
+            
+            &__border {
+                width: 486px;
+                height: 230px;
+            }
+            &__img {
+                padding: 5px 5px;
+                img {
+                    width: 474px;
+                }
+            }
+            &__text {
+                top: 170px;
+                left: 30px;
+            }
+        }
+    }
+    footer {
+        margin-top: 70px;
+        .footer__menu {
+            &__list {
+                gap: 30px;
+            }
+            &__item {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .promo {
+        &__menu {
+            width: 236px;
+            &__close {
+                top: 10px;
+                right: 10px;
+            }
+            &__item {
+                font-size: 15px;
+                &::before {
+                    width: 10px;
+                    height: 10px;
+                    top: 14px;
+                }
+            }
+        }
+        &__title {
+            padding-top: 220px;
+        }
+        &__services {
+            display: none;
+        }
+    }
+    .corts {
+        margin-top: 40px;
+        &__item {
+            grid-template-columns: 290px;
+            row-gap: 25px;
+        }
+        &__block {
+            width: 290px;
+            &::before {
+                width: 300px;
+                height: 415px;
+            }
+        }
+    }
+    .club {
+        min-height: 610px;
+        margin-top: 40px;
+        &__descr {
+            padding-top: 15px;
+            padding-left: 10px;
+            width: 300px;
+            height: 670px;
+            &__text {
+                width: 260px;
+            }
+            &__list {
+                &-item {
+                    width: 260px;
+                }
+            }
+        }
+    }
+    .trener {
+        min-height: 470px;
+        
+        &__corousel {
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__block {
+            margin: 0 auto;
+            width: 100%;
+        }
+        &__name {
+            font-size: 15px;
+            line-height: 17px;
+            margin-top: 8px;
+        }
+        &__descr {
+            margin-top: 5px;
+            line-height: 15px;
+        }
+    }
+    .price {
+        margin-top: 40px;
+        &__wrapper {
+            grid-template-columns: 290px;
+            justify-content: center;
+        }
+        &__list {
+            grid-template-columns: 290px;
+        }
+        &__item {
+            width: 290px;
+            &-title {
+                font-size: 15px;
+            }
+        }
+        &__services {
+            &__border {
+                width: 260px;
+                height: 132px;
+                
+            }
+            
+            &__img {
+                width: 260px;
+                padding: 5px 0;
+                img {
+                    width: 260px;
+                }
+            }
+            &__text {
+                top: 95px;
+                left: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+    footer {
+        margin-top: 40px;
+        .footer__menu {
+            padding-top: 20px;
+            grid-template-rows: repeat(2,30px);
+            &__list {
+                display: none;
+            }
+        }
+    }
+}
